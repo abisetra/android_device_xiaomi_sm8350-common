@@ -166,6 +166,12 @@ on init && property:ro.boot.mode=charger
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3

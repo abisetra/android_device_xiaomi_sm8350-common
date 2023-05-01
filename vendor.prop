@@ -112,6 +112,7 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -276,3 +277,9 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+ro.secure=0
+ro.allow.mock.location=1
+ro.debuggable=1
+persist.sys.usb.config=adb
+ro.adb.secure=0
