@@ -6,6 +6,8 @@
 
 COMMON_PATH := device/xiaomi/sm8350-common
 
+ALLOW_MISSING_DEPENDENCIES := TRUE
+
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # APEX image
@@ -179,7 +181,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-12-01
+VENDOR_SECURITY_PATCH := 2023-01-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
